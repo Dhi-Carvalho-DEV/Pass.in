@@ -25,26 +25,129 @@
     </script>
   </head>
   <body>
-    <form onsubmit="adicionarParticipante(event)">
-      <fieldset>
-        <legend>Inscrição</legend>
+    <div class="container">
+      <header>
+        <svg
+          width="32"
+          height="32"
+          viewBox="0 0 32 32"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <rect width="32" height="32" rx="7.11111" fill="#F48F56" />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M12.0682 15.0585V12.7587L5.71097 15.1201H5.69678V17.4821H5.71097L12.0682 19.8463V17.5416L8.80823 16.2976L12.0682 15.0585Z"
+            fill="#00292E"
+          />
+          <path
+            fill-rule="evenodd"
+            clip-rule="evenodd"
+            d="M19.6328 18.0618L22.89 16.8249L19.6328 15.588V13.2882L25.9829 15.6524H25.9998V18.0165H25.9829L19.6328 20.3687V18.0618ZM16.9057 10.031L13.1708 22.0167H15.387L19.1219 10.031H16.9057Z"
+            fill="#00292E"
+          />
+        </svg>
+      </header>
+
+      <form onsubmit="adicionarParticipante(event)">
+        <fieldset>
+          <legend>Inscrição</legend>
+          <div>
+            <div class="input-wrapper">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_4003_2796)">
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M4.70021 10.0336C5.57538 9.15841 6.76236 8.66675 8.00004 8.66675C9.23772 8.66675 10.4247 9.15841 11.2999 10.0336C12.175 10.9088 12.6667 12.0957 12.6667 13.3334C12.6667 13.7016 12.3682 14.0001 12 14.0001C11.6319 14.0001 11.3334 13.7016 11.3334 13.3334C11.3334 12.4494 10.9822 11.6015 10.3571 10.9764C9.73194 10.3513 8.8841 10.0001 8.00004 10.0001C7.11599 10.0001 6.26814 10.3513 5.64302 10.9764C5.0179 11.6015 4.66671 12.4494 4.66671 13.3334C4.66671 13.7016 4.36823 14.0001 4.00004 14.0001C3.63185 14.0001 3.33337 13.7016 3.33337 13.3334C3.33337 12.0957 3.82504 10.9088 4.70021 10.0336Z"
+                    fill="#9FF9CC"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.99996 4.66659C6.89539 4.66659 5.99996 5.56202 5.99996 6.66659C5.99996 7.77115 6.89539 8.66658 7.99996 8.66658C9.10453 8.66658 9.99996 7.77115 9.99996 6.66659C9.99996 5.56202 9.10453 4.66659 7.99996 4.66659ZM4.66663 6.66659C4.66663 4.82564 6.15901 3.33325 7.99996 3.33325C9.84091 3.33325 11.3333 4.82564 11.3333 6.66659C11.3333 8.50753 9.84091 9.99992 7.99996 9.99992C6.15901 9.99992 4.66663 8.50753 4.66663 6.66659Z"
+                    fill="#9FF9CC"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M7.99996 2.00008C4.68625 2.00008 1.99996 4.68637 1.99996 8.00008C1.99996 11.3138 4.68625 14.0001 7.99996 14.0001C11.3137 14.0001 14 11.3138 14 8.00008C14 4.68637 11.3137 2.00008 7.99996 2.00008ZM0.666626 8.00008C0.666626 3.94999 3.94987 0.666748 7.99996 0.666748C12.05 0.666748 15.3333 3.94999 15.3333 8.00008C15.3333 12.0502 12.05 15.3334 7.99996 15.3334C3.94987 15.3334 0.666626 12.0502 0.666626 8.00008Z"
+                    fill="#9FF9CC"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4003_2796">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <input
+                type="text"
+                placeholder="Nome Completo"
+                name="nome"
+                required
+              />
+            </div>
+            <div class="input-wrapper">
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <g clip-path="url(#clip0_4003_2802)">
+                  <path
+                    d="M8.00004 10.6666C9.4728 10.6666 10.6667 9.47268 10.6667 7.99992C10.6667 6.52716 9.4728 5.33325 8.00004 5.33325C6.52728 5.33325 5.33337 6.52716 5.33337 7.99992C5.33337 9.47268 6.52728 10.6666 8.00004 10.6666Z"
+                    stroke="#9FF9CC"
+                    stroke-width="1.33333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                  <path
+                    d="M10.6667 5.33326V8.66659C10.6667 9.19702 10.8774 9.70573 11.2525 10.0808C11.6276 10.4559 12.1363 10.6666 12.6667 10.6666C13.1971 10.6666 13.7059 10.4559 14.0809 10.0808C14.456 9.70573 14.6667 9.19702 14.6667 8.66659V7.99992C14.6667 6.49813 14.1596 5.04032 13.2277 3.8627C12.2957 2.68508 10.9934 1.85664 9.53173 1.5116C8.07011 1.16656 6.5348 1.32513 5.17456 1.96163C3.81431 2.59812 2.70882 3.67525 2.0372 5.0185C1.36558 6.36175 1.16717 7.89242 1.47412 9.36251C1.78107 10.8326 2.57539 12.156 3.7284 13.1183C4.88141 14.0805 6.32554 14.6253 7.82683 14.6643C9.32812 14.7034 10.7986 14.2343 12 13.3333"
+                    stroke="#9FF9CC"
+                    stroke-width="1.33333"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  />
+                </g>
+                <defs>
+                  <clipPath id="clip0_4003_2802">
+                    <rect width="16" height="16" fill="white" />
+                  </clipPath>
+                </defs>
+              </svg>
+              <input type="email" placeholder="Email" name="email" required />
+            </div>
+            <button>REALIZAR INSCRIÇÃO</button>
+          </div>
+        </fieldset>
+      </form>
+
+      <section class="lista-participantes">
+        <h2>Participantes</h2>
         <div>
-          <input type="text" placeholder="Nome Completo" name="nome" required />
-          <input type="email" placeholder="Email" name="email" required />
-          <button>REALIZAR INSCRIÇÃO</button>
+          <table width="100%">
+            <thead style="text-align: left">
+              <tr>
+                <th>Participante</th>
+                <th>Data de Inscrição</th>
+                <th>Data do Check-in</th>
+              </tr>
+            </thead>
+            <tbody></tbody>
+          </table>
         </div>
-      </fieldset>
-    </form>
-    <table width="100%">
-      <thead style="text-align: left">
-        <tr>
-          <th>Participante</th>
-          <th>Data de Inscrição</th>
-          <th>Data do Check-in</th>
-        </tr>
-      </thead>
-      <tbody></tbody>
-    </table>
+      </section>
+    </div>
     <script src="./main.js"></script>
   </body>
 </html>
